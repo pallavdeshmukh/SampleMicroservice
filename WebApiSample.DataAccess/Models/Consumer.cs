@@ -2,22 +2,22 @@
 
 namespace WebApiSample.DataAccess.Models
 {
-    public class Pet
+    public class Consumer
     {
         public int Id { get; set; }
 
         [Required]
-        public string Breed { get; set; }
+        public string Location { get; set; }
 
         public string Name { get; set; }
 
         [Required]
-        public PetType PetType { get; set; }
+        public ConsumerType ConsumerType { get; set; }
     }
 
-    public enum PetType
+    public enum ConsumerType
     {
-        Dog = 0,
-        Cat = 1
+        User = 0,
+        Agent = 1
     }
 }

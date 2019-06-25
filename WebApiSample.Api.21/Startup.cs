@@ -22,12 +22,12 @@ namespace WebApiSample.Api._21
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<ProductsRepository>();
-            services.AddScoped<PetsRepository>();
+            services.AddScoped<ConsumersRepository>();
 
             services.AddDbContext<ProductContext>(opt =>
                 opt.UseInMemoryDatabase("ProductInventory"));
-            services.AddDbContext<PetContext>(opt =>
-                opt.UseInMemoryDatabase("PetInventory"));
+            services.AddDbContext<ConsumerContext>(opt =>
+                opt.UseInMemoryDatabase("ConsumerInventory"));
 
             #region snippet_SetCompatibilityVersion
             services.AddMvc()
@@ -45,8 +45,8 @@ namespace WebApiSample.Api._21
                     Contact = new Contact
                     {
                         Name = "Pallav Deshmukh",
-                        Email = string.Empty,
-                        Url = "https://twitter.com/spboyer"
+                        Email = "pallavdeshmukh@gmail.com",
+                        Url = "https://github.com/pallavdeshmukh/SampleMicroservice.git"
                     },
                     License = new License
                     {

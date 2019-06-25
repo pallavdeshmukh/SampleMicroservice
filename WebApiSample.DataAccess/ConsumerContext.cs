@@ -3,13 +3,13 @@ using WebApiSample.DataAccess.Models;
 
 namespace WebApiSample.DataAccess
 {
-    public class PetContext : DbContext
+    public class ConsumerContext : DbContext
     {
-        public PetContext(DbContextOptions<PetContext> options)
+        public ConsumerContext(DbContextOptions<ConsumerContext> options)
             : base(options)
         {
         }
 
-        public DbSet<Pet> Pets { get; set; }
+        public DbSet<Consumer> Consumers { get; set; }
     }
 }
