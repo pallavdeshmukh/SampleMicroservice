@@ -3,3 +3,13 @@
 ################################################################################
 
 /.vs/SampleMicroservice/v15/Server/sqlite3
+/ConsoleApp/bin/Debug/netcoreapp2.1
+/ConsoleApp/obj
+/Microservice.Core/bin/Debug/netcoreapp2.1
+/Microservice.Core/obj
+/Microservice.Framework/obj
+/Microservice.Framework/bin/Debug/netstandard2.0
+/WebApiSample.Api.21/bin/Debug/netcoreapp2.1
+/WebApiSample.Api.21/obj
+/WebApiSample.DataAccess/bin/Debug/netstandard2.0
+/WebApiSample.DataAccess/obj
